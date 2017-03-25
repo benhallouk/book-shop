@@ -1,0 +1,242 @@
+body {  
+  background: rgb(247,247,247);
+  margin: 0;
+}
+
+#loading {
+    background: #f4f4f2;
+    height: 100%;
+    left: 0;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.bokeh {
+    border: 0.01em solid rgba(150, 150, 150, 0.1);
+    border-radius: 50%;
+    font-size: 100px;
+    height: 1em;
+    list-style: outside none none;
+    margin: 0 auto;
+    position: relative;
+    top: 35%;
+    width: 1em;
+    z-index: 2147483647;
+}
+.bokeh li {
+    border-radius: 50%;
+    height: 0.2em;
+    position: absolute;
+    width: 0.2em;
+}
+.bokeh li:nth-child(1) {
+    animation: 1.13s linear 0s normal none infinite running rota, 3.67s ease-in-out 0s alternate none infinite running opa;
+    background: #00c176 none repeat scroll 0 0;
+    left: 50%;
+    margin: 0 0 0 -0.1em;
+    top: 0;
+    transform-origin: 50% 250% 0;
+}
+.bokeh li:nth-child(2) {
+    animation: 1.86s linear 0s normal none infinite running rota, 4.29s ease-in-out 0s alternate none infinite running opa;
+    background: #d14232 none repeat scroll 0 0;
+    margin: -0.1em 0 0;
+    right: 0;
+    top: 50%;
+    transform-origin: -150% 50% 0;
+}
+.bokeh li:nth-child(3) {
+    animation: 1.45s linear 0s normal none infinite running rota, 5.12s ease-in-out 0s alternate none infinite running opa;
+    background: #fabe28 none repeat scroll 0 0;
+    bottom: 0;
+    left: 50%;
+    margin: 0 0 0 -0.1em;
+    transform-origin: 50% -150% 0;
+}
+.bokeh li:nth-child(4) {
+    animation: 1.72s linear 0s normal none infinite running rota, 5.25s ease-in-out 0s alternate none infinite running opa;
+    background: #88c100 none repeat scroll 0 0;
+    margin: -0.1em 0 0;
+    top: 50%;
+    transform-origin: 250% 50% 0;
+}
+@keyframes opa {
+12% {
+    opacity: 0.8;
+}
+19.5% {
+    opacity: 0.88;
+}
+37.2% {
+    opacity: 0.64;
+}
+40.5% {
+    opacity: 0.52;
+}
+52.7% {
+    opacity: 0.69;
+}
+60.2% {
+    opacity: 0.6;
+}
+66.6% {
+    opacity: 0.52;
+}
+70% {
+    opacity: 0.63;
+}
+79.9% {
+    opacity: 0.6;
+}
+84.2% {
+    opacity: 0.75;
+}
+91% {
+    opacity: 0.87;
+}
+}
+
+@keyframes rota {
+100% {
+    transform: rotate(360deg);
+}
+}
+
+header {  
+  background: linear-gradient(to bottom, #ffffff,#e5e5e5);
+  font-family: sans-serif;
+  font-size: 42px;
+  padding: 50px;
+  border-bottom: #d6d6d6 1px solid;
+}
+
+header span
+{
+  color: #d9493a;
+}
+
+header .slogan
+{
+    position: absolute;
+    left: 106px;
+    top: 98px;
+    font-size: 12px;
+    color: #9c9c9c;
+}
+
+@media (max-width: 468px) 
+{
+  header {  
+    font-size: 26px;
+    padding: 16px;
+  }
+
+  header .slogan
+  {
+    left: 50px;
+    top: 46px;
+    font-size: 12px;
+  }
+}
+
+h2
+{
+    background: linear-gradient(to bottom,#df5144, #b6392c );
+    font-size: 16px;
+    color: #fff;
+    border: #9b4239 1px solid;
+    border-radius: 8px;    
+    margin: 0 20px 0 20px;
+    padding: 16px;
+}
+
+.search
+{
+  margin:20px;
+}
+.search .form-group
+{
+  width: 100%;
+  border: #d4d4d4 4px solid;
+  border-radius: 8px;
+}
+.search .input-group
+{
+  width: 100%;
+}
+.search .search-field
+{  
+  background: linear-gradient(to bottom,#fff, #e8e8e8);
+  height: 44px;
+  border: #b7b7b7 1px solid;
+}
+.search .input-group-addon
+{
+  width: 40px !important;
+  background: linear-gradient(to bottom,#df5144, #b6392c );
+  font-size: 18px;
+  color: #fff;
+  border: #9b4239 1px solid;  
+}
+
+.content
+{
+   background: linear-gradient(to bottom, rgb(247,247,247) 20%, rgba(0,0,0,0) 0%);
+}
+
+.book
+{
+  background: #fff;
+  min-height: 380px;
+  text-align: center;
+  border: #dcd1d1 1px solid;
+  border-radius: 10px;
+  margin: 18px;
+  padding: 20px;  
+}
+
+.book a
+{
+  color: #fb5c4c;
+}
+
+.book img
+{
+    max-height: 120px;
+    min-height: 120px;
+}
+
+.book h4
+{
+  text-align: left;
+  color: #d9493a;
+  font-size: 16px;
+  padding: 15px 0 2px 0;
+}
+
+.book p
+{
+  text-align: left;
+}
+.book .footer
+{
+    position: absolute;
+    bottom: 40px;
+}
+.book .price
+{
+  text-align: left;
+  font-size: 18px; 
+  font-weight: bold;
+  padding-top: 6px;
+}
+.book .action
+{
+    text-align: right;
+}
+.book button
+{
+  background: #333333;  
+  color: #fff;
+}

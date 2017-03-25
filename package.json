@@ -1,0 +1,54 @@
+{
+  "name": "candidate-exercise",
+  "description": "Let's build an online bookshop",
+  "homepage": "https://github.com/vendigo-group/candidate-exercise#readme",
+  "license": "MIT",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Vendigo Finance Group Limited",
+  "contributors": [
+    "Antony Jones <antony.jones@vendigo.com>",
+    "Sid Wood <sid.wood@vendigo.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vendigo-group/candidate-exercise.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vendigo-group/candidate-exercise/issues"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "keywords": [
+    "pairing",
+    "test"
+  ],
+  "scripts": {
+    "postinstall": "webdriver-manager update",    
+    "lint": "snazzy",
+    "start": "nodemon .",
+    "test": "lab -c",
+    "e2e": "protractor conf.js"
+  },
+  "dependencies": {
+    "boom": "^4.2.0",
+    "hapi": "^16.0.1",
+    "inert": "^4.0.3",
+    "joi": "^10.0.5",
+    "vision": "^4.1.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "nodemon": "^1.11.0",
+    "snazzy": "^6.0.0",
+    "standard": "^8.6.0",
+    "code": "^4.0.0",
+    "handlebars": "^4.0.6",  
+    "lab": "^13.0.1",
+    "lout": "^10.0.1",
+    "protractor": "^5.1.1",    
+    "protractor-jasmine2-screenshot-reporter": "^0.3.3"
+  }
+}

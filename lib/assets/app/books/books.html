@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-md-12">
+        <div data-ng-include="'app/layout/search.html'"></div>
+    </div>
+</div>
+<h2>FEATURED</h2>
+<div class="row">
+    <div data-ng-repeat="book in vm.data">
+       <div class="col-md-3" 
+                      data-book title="{{book.title}}" 
+                      data-cover="{{book.cover.medium}}" 
+                      data-author="{{book.authors[0].name}}"
+                      data-key="{{book.key.split('/')[2]}}">
+        </div>
+        <div data-ng-if="(($index+1)%4===0)" class="clearfix hidden-sm"></div>        
+    </div>    
+</div>
