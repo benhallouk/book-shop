@@ -1,24 +1,51 @@
-# Candidate Exercise
+# Book Shop
 
-## Requirements
+Book shop online book store that lists books displaying the book cover image, title, author, open library Id  and price, it works in responsive way across all devices.
 
-Let's pretend we want to sell books online (like Amazon). As a first step we want to build a site that lists books displaying the book cover image, title, author, open library Id number (OLID), and price.
+![Alt Text](implemented-design.png)
 
-We'd also like a form that allows us to filter (on the server side) by the book's title or OLID. If searching by OLID we should validate it before we send it to our server. If it's not a valid OLID then we can assume it's a title.
+## implemented features
 
-The list of books we want to sell is available here https://goo.gl/Lk2MTJ. There is an example of the API response in the `books.json` file. Note that the API doesn't provide pricing. We'll have to add that later.
+- Book listing
+- Searching books by title, using server side autocomplete
+- Searching books by open library id
+- Responsive UI 
 
-Finally, we’d like the front-end to be styled to match the following design. The designer forgot to add the OLID number to the mockup.
+## Technology stack
 
-![Alt Text](design.jpg)
+- Javascript
+- Angularjs
+- HTML5
+- CSS3
+- Nodejs hapi
+- Lab for TDD
+- Code for TDD
+- Selenium for E2E
+- Protractor for E2E
+- Jasmin for E2E
 
-## What we’re looking for
+## To get started
 
-* Good test coverage
-* Clean, well structured code
-* Logical approach to implementation
-* Appropriate use of third party libs
+Folow this guide
 
-## What is here
+To install depandancies
+```bash
+npm install
+```
 
-The backend is a simple server running [hapi](https://hapijs.com). The frontend is plain html with jQuery. You can swap out any of these technologies as you see fit.
+This will install the nodejs required depandancies along side with dev depandancies
+
+To run the application
+```bash
+npm start
+```
+
+To run the functional test
+```bash
+npm test
+```
+
+To run the end to end test, you will need Java to be installed in your machine and JDK to be in your path [for more details folow this guide](https://github.com/benhallouk/protractor-sample)
+```bash
+npm run e22
+```
